@@ -2,6 +2,8 @@ import react , {useState, useEffect} from 'react';
 //Material Ui
 import Box from '@mui/material/Box';
 
+import { mainColor } from '../services/commonStyles';
+
 //Components
 import PlayerBoard from '../playerView/PlayerBoard';
  
@@ -17,7 +19,8 @@ const GameBoard = ( { usersArray, currentUser } :IGameBoardProps ):JSX.Element =
             justifyContent: 'center',
             alignItems: 'center',
             flexWrap: 'wrap',
-            position: 'relative'
+            position: 'relative',
+            backgroundColor: mainColor
         }}>
            { usersArray.map((player:IPlayer) => <PlayerBoard key={player.id} player = {player} users = {usersArray} currentUser = {currentUser}/>)}
            { usersArray.length === 1 && <h2>You are alone in the lobby right now</h2> }

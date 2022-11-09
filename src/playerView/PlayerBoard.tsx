@@ -25,7 +25,7 @@ useEffect(() => {
             gap: 3,
             flexDirection: 'column',
             width: '48%',
-            height: '50vh',
+            height: '90vh',
             border: '2px solid black',
             padding: '10px 15px',
             boxShadow: '-2px -10px 17px 5px rgba(0,0,0,0.44)',

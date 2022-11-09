@@ -40,7 +40,11 @@ const Modal = ( {eventHandler, users, currentUser} : IModalProps ): JSX.Element 
   }
     
     const style = {
-        position: 'absolute' as 'absolute',
+        position: 'absolute',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'column',
         top: '50%',
         left: '50%',
         transform: 'translate(-50%, -50%)',

@@ -3,6 +3,8 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 
+import { mainColor } from '../services/commonStyles';
+
 import { useEffect } from 'react';
 
 import { IFormProps } from '../types/commonTypes';
@@ -42,7 +44,7 @@ useEffect(() => {
          height: '100vh',
          alignItems: 'center',
          justifyContent: 'center',
-        
+         backgroundColor: mainColor,
         }}
         noValidate
         autoComplete="off"
