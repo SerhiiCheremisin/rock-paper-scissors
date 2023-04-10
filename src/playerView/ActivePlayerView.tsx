@@ -30,7 +30,7 @@ const ActivePlayerView = ( { player, users } : IPlayesActiverProps ) :JSX.Elemen
           <h2>{`Player: ${player.name} (it's you)`}</h2>
           <h3>  { `Your score is : ${player.score} points`} </h3>
             { player.figureIsChosen ? <h3>{`You has chosen your figure, wait for the opponent`}</h3> : <h3>{`Choose your figure below:`}</h3>}
-         <Stack spacing={30} direction="row">
+         <Stack justifyContent="space-around" direction="row">
             {figuresArray.map((figure:string, id:number) => {
                return (
                 <Box
@@ -43,7 +43,8 @@ const ActivePlayerView = ( { player, users } : IPlayesActiverProps ) :JSX.Elemen
             })}
          </Stack>
          { player.figureIsChosen === true && <h3>{`Your choice is: ${player.choosenFigure}`}</h3> }
-         { player.figureIsChosen === true && <Box sx={[boxStyles, {marginLeft: '43%'}]}> <img src={`/images/${player.choosenFigure.toLowerCase()}.png`} alt={`${player.choosenFigure}`} /> </Box> }
+         { player.figureIsChosen === true && <Box sx={[boxStyles, {alignSelf: 'center', backgroundColor:'#cdb4db'}]}> 
+         <img src={`/images/${player.choosenFigure.toLowerCase()}.png`} alt={`${player.choosenFigure}`} /> </Box> }
         </>
     )
 }

@@ -57,7 +57,7 @@ const twoPlayersRule = (userArr:IPlayer[]) => {
   }
 }
 
-export const rulesHandler  = (userArr:IPlayer[], setNeedTocompare: Function) =>  {
+export const rulesHandler  = (userArr:IPlayer[], setNeedToCompare: Function) =>  {
   
     // Checking possible draw
   let draw = new Set()
@@ -73,22 +73,22 @@ export const rulesHandler  = (userArr:IPlayer[], setNeedTocompare: Function) => 
       }
       return coppiedObject
     })
-    setNeedTocompare(false);
+    setNeedToCompare(false);
     chooserHandler(coppiedArray);
     alert('You got draw')
     return
   } 
 
   //2 players rule
-  setNeedTocompare(false);
+  setNeedToCompare(false);
   twoPlayersRule(userArr);
   //i need to add rules for 3 or more players in future
   
 }
 
-export const compareHandler = (ckeck: boolean, setNeedTocompare: Function) => {
-    if (ckeck) {
-    setNeedTocompare(true)
+export const compareHandler = (check: boolean, setNeedToCompare: Function) => {
+    if (check) {
+     setNeedToCompare(true)
     return
      }
 }

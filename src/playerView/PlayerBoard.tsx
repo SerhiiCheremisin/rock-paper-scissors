@@ -19,12 +19,13 @@ useEffect(() => {
 }    
 },[])
 
+let width = users.length === 1 ? '100%' : '48%';
     return(
         <Box sx={{
             display: 'flex',
             gap: 3,
             flexDirection: 'column',
-            width: '48%',
+            width: {width},
             height: '90vh',
             border: '2px solid black',
             padding: '10px 15px',

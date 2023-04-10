@@ -13,7 +13,6 @@ const GameBoard = ( { usersArray, currentUser } :IGameBoardProps ):JSX.Element =
 
     return (
         <Box sx={{
-            width: '100%',
             height: '100vh',
             display: 'flex',
             justifyContent: 'center',

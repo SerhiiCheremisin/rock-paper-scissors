@@ -54,7 +54,7 @@ useEffect(() => {
             padding: 5,
             display: 'flex',
             justifyContent: 'space-between',
-            width: 400
+            width: 420
             }}>
            <TextField onChange={e => setName(e.target.value)} value={userName} id="outlined-basic" label="Outlined" variant="outlined" />
            <Button type='submit' variant="outlined">Submit the name</Button>
